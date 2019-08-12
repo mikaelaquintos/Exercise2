@@ -1,0 +1,16 @@
+module tape; 
+
+class player { // What's the difference between declaring class and object
+	double value; 
+}
+
+object player {
+	name Temp;
+	file "Problem2.glm";
+	loop 28;
+}
+
+#include "Problem2.glm"
+object house2{
+	heating_setpoint Temp.value*1+2;
+}
