@@ -1,0 +1,19 @@
+jobs: 
+  build:
+    docker: 
+      - image: gridlabd/slac-master
+    steps: 
+      - checkout 
+      - run: 
+          name: Run version check
+          command: |
+            gridlabd --version
+            gridlabd --origin
+      - run:
+          name: Run the simulation
+          command: |
+            ls
+            gridlabd Problem3.glm
+            echo "Model finished"
+
+
