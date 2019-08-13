@@ -11,6 +11,6 @@ object player {
 }
 
 #include "Problem2.glm"
-object house2{
+object house{
 	heating_setpoint Temp.value*1+2;
 }
